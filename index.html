@@ -5,10 +5,7 @@
 </head>
 <body>
 <canvas id="my_canvas" width="70" height="70" style="border:1px dashed #CCC;"></canvas>
-
 <div id="maCount">0</div>
-
-
 
 <script>
 var ctx = document.getElementById('my_canvas').getContext('2d');
@@ -36,37 +33,12 @@ function progressSim(){
 }
 var sim = setInterval(progressSim, 50);
 
-
-
-
 var counter = 0;
 	setInterval("timer()", 100);
 	function timer(){
 		var htn = counter++;
 	document.getElementById('mmaCount').text = htn;
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </script>
 </body>  
 </html>
