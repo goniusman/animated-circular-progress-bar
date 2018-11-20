@@ -1,0 +1,21 @@
+
+<p id="contdw1"></p>
+
+
+
+
+
+jQuery(document).ready(function($){
+var numba = '555';
+	$('#contdw1').animate({
+		'Number' : numba,
+	}, {duration: 3000});
+
+	$({counter: 1 }).animate({counter : numba}, {
+			duration: 3000,
+			step : function(){
+			$('#contdw1').text(Math.ceil(this.counter));
+		   }
+	});
+	
+	});
